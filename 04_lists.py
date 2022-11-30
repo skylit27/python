@@ -7,6 +7,8 @@ print(len(my_list))
 
 my_list = [35, 53, 58, 30, 30]
 
+pop_list = [11,24,35,50,11,22]
+
 print(my_list)
 print(len(my_list))
 
@@ -74,6 +76,25 @@ print(my_list) #aqui solo queda 53 en la lista
 """es decir que si a pop no le pasamos ningun parametro de lista elimina el ultimo numero de la lista sin embargo tambien retorna el numero que
 eliminamos, pero tambien podemos pasarle una posicion de lista y eliminara el dato de esa posicion y nos lo
 retornara en caso de que lo necesitemos"""
+
+
+#Guardamos el dato que eliminamos con pop en una variable
+
+my_pop_element = pop_list.pop(2)
+print(my_pop_element)
+print(pop_list)
+
+# si solo quieres eliminar un elemento sin tener el dato usamos del
+
+del pop_list[2]
+print(pop_list) #podemos ver que se elimino el 50
+
+"""la diferencia entre el remove y el del es que con el remove eliminamos un dato que conocemos 
+como vimos anterior mente eliminamos el 30 y este se elimino pero por que conocemos el dato
+en el caso de del eliminamos un dato en una posicion de la lista, es decir del elimina por indice"""
+
+pop_list.clear() #limpiamos la lista
+print(pop_list)
 
 my_list= "Hola Python" #convertimos la lista anterior a string # Es un tipado dinamico de python
 
