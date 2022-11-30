@@ -83,7 +83,7 @@ retornara en caso de que lo necesitemos"""
 #Guardamos el dato que eliminamos con pop en una variable
 
 my_pop_element = pop_list.pop(2)
-print(my_pop_element)
+print(my_pop_element) 
 print(pop_list)
 
 # si solo quieres eliminar un elemento sin tener el dato usamos del
@@ -91,12 +91,25 @@ print(pop_list)
 del pop_list[2]
 print(pop_list) #podemos ver que se elimino el 50
 
+my_new_list = pop_list.copy() #copiamos el valor de pop_list a otra variable llamada my_new_list --- ver linea 102
+
 """la diferencia entre el remove y el del es que con el remove eliminamos un dato que conocemos 
 como vimos anterior mente eliminamos el 30 y este se elimino pero por que conocemos el dato
 en el caso de del eliminamos un dato en una posicion de la lista, es decir del elimina por indice"""
 
 pop_list.clear() #limpiamos la lista
-print(pop_list)
+print(pop_list) #aqui mostramos la lista vacia
+print(my_new_list)#aqui mostramos la lista antes de ser vaciada y esta es la variable en la que copiamos los datos
+
+
+my_new_list.reverse() #ordena los datos al reves es decir los pone inversos a su orden original pero tenemos que hacer primero el reverse y despues pasarlo al print
+print(my_new_list)
+
+my_new_list.sort()
+print(my_new_list) #sort nos los ordena de menor a mayor, tambien podemos darle criterios
+
+print(my_new_list[1:2]) #nos muestra lo que hay entre ciertos elementos
+
 
 my_list= "Hola Python" #convertimos la lista anterior a string # Es un tipado dinamico de python
 
