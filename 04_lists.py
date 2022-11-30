@@ -9,6 +9,8 @@ my_list = [35, 53, 58, 30, 30]
 
 pop_list = [11,24,35,50,11,22]
 
+pop_list_save= pop_list[:]
+
 print(my_list)
 print(len(my_list))
 
@@ -110,4 +112,15 @@ print(type(my_list))
 
 
 
+#ejemplo cambio de valor en una lista
 
+print(pop_list_save)  #cree una variable para guardar los datos de poplist es decir tiene los valores iniciales
+
+pop_list_save.insert(1, "negro")
+print(pop_list_save)
+
+pop_list_save[1] = "azul" #modificamos el valor de negro a azul
+print(pop_list_save)
+
+pop_list_save.remove("azul") #despues lo removemos con el dato, por que en este caso conocemos el dato
+print(pop_list_save)
