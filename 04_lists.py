@@ -55,6 +55,26 @@ print(my_other_list)
 my_list.remove(30) # aqui solo eliminara uno de los dos 30 que existen en la lista en este caso el primer 30 que encuentra
 print(my_list)
 
+my_list.pop() # elimina el ultimo de la lista 
+print(my_list) #aqui elimina el 30
+
+print(my_list.pop()) # aqui nos devolvera 58 por que es el nuevo ultimo dato que elimino
+ # el pop nos devuelve el ultimo dato que hemos eliminado por si lo necesitamos
+
+print(my_list) #aqu verificamos que ya no tenemos el 58
+
+
+#hacemos nuevamente un pop pero pasandole una posicion de lista
+print(my_list.pop(0)) # en este caso es 35
+
+
+print(my_list) #aqui solo queda 53 en la lista
+
+
+"""es decir que si a pop no le pasamos ningun parametro de lista elimina el ultimo numero de la lista sin embargo tambien retorna el numero que
+eliminamos, pero tambien podemos pasarle una posicion de lista y eliminara el dato de esa posicion y nos lo
+retornara en caso de que lo necesitemos"""
+
 my_list= "Hola Python" #convertimos la lista anterior a string # Es un tipado dinamico de python
 
 print(my_list)
