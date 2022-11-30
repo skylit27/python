@@ -41,13 +41,19 @@ print(my_other_list)
 
 my_other_list.insert(1, "negro") 
 
+print(my_other_list)
+
 """insert: inserta en una posicion de la lista 
 un nuevo dato desplazando el dato que esta en 
 esta posicion a la derecha en este caso el dato de la posicion 1 pasa
 a la posicion 2
 """
+my_other_list.remove("negro") #ponemos el dato a eliminar no la posicion en esta caso eliminamos negro #nota solo elimina 1 si hay 2 valores iguales o mas solo elimina el primer elemento
 print(my_other_list)
 
+
+my_list.remove(30) # aqui solo eliminara uno de los dos 30 que existen en la lista en este caso el primer 30 que encuentra
+print(my_list)
 
 my_list= "Hola Python" #convertimos la lista anterior a string # Es un tipado dinamico de python
 
