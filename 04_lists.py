@@ -137,3 +137,5 @@ print(pop_list_save)
 
 pop_list_save.remove("azul") #despues lo removemos con el dato, por que en este caso conocemos el dato
 print(pop_list_save)
+
+print(pop_list_save.index(35))
