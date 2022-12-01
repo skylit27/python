@@ -42,4 +42,8 @@ my_tuple = tuple(my_tuple)
 print(my_tuple)
 print(type(my_tuple))
 
+del my_tuple #la variable ya no esta definida
+#print(my_tuple)
+#NameError: name 'my_tuple' is not defined
 
+#tampoco podemos eliminar elementos con del por que las tuplas son inmutables
