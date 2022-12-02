@@ -43,3 +43,5 @@ print(my_new_set)
 
 print(my_new_set.union(my_new_set)) #no aceptan repetidos por eso no se unen
 print(my_new_set.union(my_new_set).union(my_set.union({"C#","JavaScript"})))
+
+print(my_new_set.difference(my_set)) #estamos buscando la diferencia
