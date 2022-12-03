@@ -44,5 +44,36 @@ print(my_dict.items()) # nos retorna un listado de items
 print(my_dict.keys()) # nos retorna solo las claves
 print(my_dict.values()) # nos retorna los datos
 
-my_new_dict = my_other_dict.fromkeys(("Nombre",1)) #nos sirve para crear un diccionario sin datos
+#creamos un diccionario nuevo con una lista
+
+my_list= ["Ciudad", "Estado", "Pais"]
+# my_other_list= ["Cancun","Quintana Roo","Mexico"]
+
+#dict es una palabra reservada del sistema}
+
+my_new_dict = dict.fromkeys(my_list) #nos sirve para crear un diccionario sin datos
 print(my_new_dict)
+
+my_new_dict = dict.fromkeys(("Ciudad", "Estado", "Pais"))  # es practicamente lo mismo que arriba
+print(my_new_dict)
+
+
+my_new_dict = dict.fromkeys(my_dict)  # el fromkeys se puede utilizar para hacer una copia de un diccionario pero unicamente quedandose con las claves
+print(my_new_dict)
+
+my_new_dict = dict.fromkeys(my_dict,("Oce" )) #solo le mete a todas las claves el mismo valor
+print(my_new_dict)
+
+
+print(my_new_dict.values()) #nos retorna los valores en este caso oce
+
+
+
+print(list(my_new_dict.values()))
+
+
+my_values = my_new_dict.values()
+print(type(my_values)) # <class 'dict_values'>
+
+print(tuple(my_new_dict))
+print(set(my_new_dict))
