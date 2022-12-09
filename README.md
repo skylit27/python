@@ -1,2 +1,2 @@
 # python
-#en este repositorio practicare con python
+#Curso basico de python
