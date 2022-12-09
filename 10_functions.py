@@ -46,9 +46,10 @@ def print_name_with_default (name,surname, alias= "Sin alias"):  # en alias asig
 print_name_with_default("oce", "skylit")
 print_name_with_default("oce", "skylit", "sky")
 
-def print_texts(*texts): #para imprimir un numero infinito de textos"
+def print_texts(*texts): #para imprimir un numero infinito de textos" "parametros dinamicos"
     for text in texts:
         print(text.upper()) #imprime los textos en mayusculas
 
 print_texts("Hola","Python","Oce","Skylit") #numero de parametros dinamico
 print_texts("Hola")
+ 
